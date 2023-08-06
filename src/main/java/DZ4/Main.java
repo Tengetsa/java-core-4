@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Shop shop = new Shop();
 
-        Customer customer1 = new Customer("John Smith", 30, "123456789");
-        Customer customer2 = new Customer("Alice Johnson", 25, "987654321");
+        Customer customer1 = new Customer("Будко Сергей Владимирович", 31, "+7-904-834-52-23");
+        Customer customer2 = new Customer("Зимкина Мария Владимеровна", 26, "+7-914-823-12-53");
         shop.addCustomer(customer1);
         shop.addCustomer(customer2);
 
