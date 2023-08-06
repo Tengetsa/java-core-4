@@ -14,17 +14,14 @@ public class Shop {
         this.orders = new ArrayList<>();
     }
 
-    // Добавление покупателя в магазин
     public void addCustomer(Customer customer) {
         customers.add(customer);
     }
 
-    // Добавление товара в магазин
     public void addProduct(Product product) {
         products.add(product);
     }
 
-    // Создание заказа и добавление его в магазин
     public void makePurchase(Customer customer, Product product, int quantity) throws CustomerException, ProductException, AmountException {
         if (!customers.contains(customer)) {
             throw new CustomerException("Invalid customer: " + customer.getFullName());
@@ -43,7 +40,6 @@ public class Shop {
         orders.add(order);
     }
 
-    // Вывод информации о каждом заказе
     public void printOrders() {
         for (Order order : orders) {
             Customer customer = order.getCustomer();
@@ -59,5 +55,4 @@ public class Shop {
             System.out.println("--------------------");
         }
     }
-
 }
