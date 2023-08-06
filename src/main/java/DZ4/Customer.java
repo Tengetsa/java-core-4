@@ -12,8 +12,6 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
-    // Геттеры и сеттеры
-
     public String getFullName() {
         return fullName;
     }
